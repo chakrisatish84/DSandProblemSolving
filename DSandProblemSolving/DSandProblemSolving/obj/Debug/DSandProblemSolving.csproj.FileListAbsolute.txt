@@ -1,0 +1,7 @@
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.exe.config
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.exe
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.pdb
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.csprojResolveAssemblyReference.cache
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.csproj.CoreCompileInputs.cache
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.exe
+C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.pdb

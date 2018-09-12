@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListNodes\BinarySearchTree.cs" />
+    <Compile Include="ListNodes\DoublyLinkedList.cs" />
+    <Compile Include="ListNodes\DoublyListNode.cs" />
     <Compile Include="ListNodes\SingleLinkedList.cs" />
     <Compile Include="ListNodes\SingleListNode.cs" />
     <Compile Include="Program.cs" />

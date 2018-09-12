@@ -37,7 +37,8 @@ namespace DSandProblemSolving
             #endregion
 
             // singleLinkedList
-            int[] arr = { 2, 5, 7, 11, 12, 15, 20, 30, 34, 36, 30 };
+            //int[] arr = { 2, 5, 7, 11, 12, 15, 20, 30, 34, 36, 30,40 };
+            int[] arr = { 6, 5, 3, 1, 8, 7, 10, 2, 4,12 };
             //int[] arr1 = { 10,50,70,90,100 };
             //int[] arr2 = { 30,40,60,80 };
             //Add two lists
@@ -46,7 +47,7 @@ namespace DSandProblemSolving
             int[] listPallindrome = { 1, 2, 3, 3, 2, 1 };
             int[] arraywithDuplicates = { 1, 2, 2, 3, 3, 3, 4 };
             ListNodes.SingleLinkedList singlelinkedList = new ListNodes.SingleLinkedList();
-            singlelinkedList.createSingleLinkedList(arraywithDuplicates);
+            //singlelinkedList.createSingleLinkedList(arraywithDuplicates);
             ////singlelinkedList.insertatStart(50);
             ////singlelinkedList.insertatEnd(60);
             ////singlelinkedList.insertatSpecificPosition(80, 7);           
@@ -66,11 +67,38 @@ namespace DSandProblemSolving
 
             //singlelinkedList.swapNodesPairwise();
             //singlelinkedList.swapNodesinLLingroupsize(4);
-            singlelinkedList.removeDuplicatessortedList();
-            singlelinkedList.traverseLinkedList();
+            //singlelinkedList.removeDuplicatessortedList();
+            //singlelinkedList.traverseLinkedList();
 
 
+            //ListNodes.DoublyLinkedList doublyLinkedList = new ListNodes.DoublyLinkedList();
+            //doublyLinkedList.create(arr);
 
+            //doublyLinkedList.insertAtStart(1);
+            //doublyLinkedList.insertAtEnd(31);
+            ////doublyLinkedList.insertAtPosotion(50, 4);
+            //doublyLinkedList.insertAtmiddle(55);
+            //doublyLinkedList.deleteAtStart();
+            //doublyLinkedList.deleteAtEnd();
+            //doublyLinkedList.deleteAtPosition(4);
+            //doublyLinkedList.deleteAtMiddle();
+            //doublyLinkedList.reverseList();
+            //doublyLinkedList.traverseDoublyLinkedListFromStart();
+            //Console.WriteLine();
+            //doublyLinkedList.traverseDoublyLinkedListFromEnd();
+
+            //Binary search tree
+            ListNodes.BinarySearchTree bst = new ListNodes.BinarySearchTree();
+            bst.createBST(arr);
+
+            bst.DeleteNodeFromBST(8);
+
+            bst.breadthfirstsearchLevelOrderTraversal();
+            //bst.depthFirstSearchPreOrderTraversal();
+            //bst.depthFirstSearchInOrderTraversal();
+            //bst.depthFirstSearchPostOrderTraversal();
+            //bst.checkBinarytreeisBST();
+            
         }
 
         private static string BinarySearch(int[] arr, int arrlength, int SearchElement)

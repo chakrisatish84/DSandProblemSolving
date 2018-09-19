@@ -461,11 +461,11 @@ namespace DSandProblemSolving.ListNodes
 
             if (result == 1)
             {
-                Console.WriteLine("This linked list is Pallindromte");
+                Console.WriteLine("This linked list is Pallindrome");
             }
             else
             {
-                Console.WriteLine("This linked list is not a Pallindromte");
+                Console.WriteLine("This linked list is not a Pallindrome");
             }
         }
 
@@ -688,8 +688,13 @@ namespace DSandProblemSolving.ListNodes
             SingleListNode p = Head;
             SingleListNode q = null;
             SingleListNode temp = null;
-
-            SingleListNode new_start = p.next;
+            SingleListNode new_start = null;
+            if (p.next == null)
+            {
+                return;
+            }
+            else
+                new_start = p.next;
 
             while (p.next != null)
             {

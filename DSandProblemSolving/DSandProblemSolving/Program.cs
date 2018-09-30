@@ -148,26 +148,171 @@ namespace DSandProblemSolving
 
             //FibnaciSeries(8);
 
-            int[] swapArray = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
-            SwapzeroOneTwo(swapArray);
+            //int[] swapArray = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+            //SwapzeroOneTwo(swapArray);
 
+            int[,] matrix = new int[4, 4]{
+            {1,2,3,4},
+            {5,6,7,8},
+            {9,10,11,12},
+            {13,14,15,16}
+    };
 
+            int[,] Negativematrix = new int[3, 4]{
+            {-3,-2,-1,1},
+            {-2,-2,3,4},
+            {4,5,7,8}
+    };
+            //GetUpperBound(0) - Will get Row count
+            //GetUpperBound(1) - Will get Col count
+            //Printmatrixspiralform(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+            //PrintDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+            //countNegativeValuesinMatrix(Negativematrix, Negativematrix.GetUpperBound(0), Negativematrix.GetUpperBound(1));
+            //searchElementinaMatrix(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1), 25);
+            PrintAllDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+
+        }
+
+        private static void PrintAllDiagonal(int[,] matrix, int lastRow, int lastCol)
+        {
+          for(int i=0; i <= lastRow; i++)
+            {
+                int j = i, k = 0;
+                while (j >= 0)
+                {
+                    Console.WriteLine(matrix[j,k]);
+                    j--;
+                    k++;
+                }
+            }
+          for(int i=1; i<=lastCol; i++)
+            {
+                int j = lastRow, k = i;
+                while (j >=i && k<=lastCol)
+                {
+                    Console.WriteLine(matrix[j, k]);
+                    j--;
+                    k++;
+                }
+            }
+        }
+
+        private static void searchElementinaMatrix(int[,] matrix, int lastRow, int lastCol, int searchElement)
+        {
+            int i = 0, j = lastCol;
+            bool searchElementFound = false;
+
+            while (i <= lastRow && j >= 0) {
+
+                if (matrix[i, j] == searchElement)
+                {
+                    searchElementFound = true;
+                    break;
+                }
+                else if (matrix[i, j] > searchElement)
+                {
+                    j--;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            if (searchElementFound)
+            {
+                Console.WriteLine("Search Element Found");
+            }
+            else
+            {
+                Console.WriteLine("Search Element not found");
+            }
+        }
+
+        private static void countNegativeValuesinMatrix(int[,] negativematrix, int lastRow, int lastCol)
+        {
+            int count = 0;
+            for(int i=0; i<= lastRow; i++)
+            {
+                int j = lastCol;
+                while(j >= 0)
+                {
+                    if(negativematrix[i,j] < 0)
+                    {
+                        count += j+1;
+                        break;
+                    }
+                    j--;
+                }
+            }
+
+            Console.WriteLine("Negative values count in this matrix "+ count);
+        }
+
+        private static void PrintDiagonal(int[,] matrix, int lastRow, int lastCol)
+        {
+            //for(int i=0,k=0; i <= lastRow; i++,k++)
+            //{
+            //    Console.WriteLine(matrix[i,k]);
+            //}
+            //for(int i=0,k= lastCol; k>=0; i++, k--)
+            //{
+            //    Console.WriteLine(matrix[i,k]);
+            //}
+            for (int i = 0, k = 0; i <= lastRow; i++, k++)
+            {
+                Console.WriteLine(matrix[i, k] + "," + matrix[k, lastRow - i]);
+            }
+        }
+
+        private static void Printmatrixspiralform(int[,] matrix, int lastRow, int lastCol)
+        {
+            int i, k = 0, l = 0;
+            while (k <= lastRow && l <= lastCol)
+            {
+
+                for (i = l; i <= lastCol; i++)
+                {
+                    Console.WriteLine(matrix[k, i]);
+                }
+                k++;
+                for (i = k; i <= lastRow; i++)
+                {
+                    Console.WriteLine(matrix[i, lastCol]);
+                }
+                lastCol--;
+                if (k <= lastRow)
+                {
+                    for (i = lastCol; i >= l; i--)
+                    {
+                        Console.WriteLine(matrix[lastRow, i]);
+                    }
+                    lastRow--;
+                }
+                if (l <= lastCol)
+                {
+                    for (i = lastRow; i >= k; i--)
+                    {
+                        Console.WriteLine(matrix[i, l]);
+                    }
+                    l++;
+                }
+            }
         }
 
         private static void SwapzeroOneTwo(int[] swapArray)
         {
             int low = 0, high = swapArray.Length - 1, mid = 0;
 
-            while(mid <= high)
+            while (mid <= high)
             {
                 switch (swapArray[mid])
                 {
                     case 0:
-                        Swap(swapArray, low,mid);
+                        Swap(swapArray, low, mid);
                         low++;
                         mid++;
                         break;
-                    case 1:                       
+                    case 1:
                         mid++;
                         break;
                     case 2:

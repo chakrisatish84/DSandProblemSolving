@@ -5,3 +5,10 @@ C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug
 C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.csproj.CoreCompileInputs.cache
 C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.exe
 C:\Samples\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.pdb
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.exe.config
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.exe
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\bin\Debug\DSandProblemSolving.pdb
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.csprojAssemblyReference.cache
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.csproj.CoreCompileInputs.cache
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.exe
+S:\Projects\DSandProblemSolving\DSandProblemSolving\DSandProblemSolving\obj\Debug\DSandProblemSolving.pdb

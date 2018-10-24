@@ -180,8 +180,8 @@ namespace DSandProblemSolving.ListNodes
             while(temp != null)
             {
                 temp1 = temp.right;
-                temp1.right = temp1.left;
-                temp1.left = temp1;
+                temp.right = temp.left;
+                temp.left = temp1;
                 if(temp.left == null)
                 {
                     Head = temp;

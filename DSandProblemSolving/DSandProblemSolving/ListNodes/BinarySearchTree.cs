@@ -451,7 +451,7 @@ namespace DSandProblemSolving.ListNodes
             int[] arr = new int[number];
             arr[0] = 1; arr[1] = 1;
 
-            for (int i = 2; i < number; i++)
+            for (int i = 2; i <= number; i++)
             {
                 arr[i] = 0;
                 for (int j = 0; j < i; j++)

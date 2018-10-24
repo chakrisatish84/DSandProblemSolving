@@ -200,16 +200,16 @@ namespace DSandProblemSolving
             //String str2 = "abcdef";           
             //dynamicEditDistance(str1.ToCharArray(), str2.ToCharArray());
 
-            //WeightedJobScheduledProblem
-            Job[] jobs = new Job[6];
-            jobs[0] = new Job(1, 3, 5);
-            jobs[1] = new Job(2, 5, 6);
-            jobs[2] = new Job(4, 6, 5);
-            jobs[3] = new Job(6, 7, 4);
-            jobs[4] = new Job(7, 9, 2);
-            jobs[5] = new Job(5, 8, 11);
+            ////WeightedJobScheduledProblem
+            //Job[] jobs = new Job[6];
+            //jobs[0] = new Job(1, 3, 5);
+            //jobs[1] = new Job(2, 5, 6);
+            //jobs[2] = new Job(4, 6, 5);
+            //jobs[3] = new Job(6, 7, 4);
+            //jobs[4] = new Job(7, 9, 2);
+            //jobs[5] = new Job(5, 8, 11);
 
-            maximumProfits(jobs);
+            //maximumProfits(jobs);
 
             int[,] matrix = new int[4, 4]{
             {1,2,3,4},
@@ -226,7 +226,7 @@ namespace DSandProblemSolving
             //GetUpperBound(0) - Will get Row count
             //GetUpperBound(1) - Will get Col count
             //Printmatrixspiralform(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
-            //PrintDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+            PrintDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
             //countNegativeValuesinMatrix(Negativematrix, Negativematrix.GetUpperBound(0), Negativematrix.GetUpperBound(1));
             //searchElementinaMatrix(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1), 25);
             //PrintAllDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeapSort\HeapSort.cs" />
     <Compile Include="ListNodes\BinarySearchTree.cs" />
     <Compile Include="ListNodes\DoublyLinkedList.cs" />
     <Compile Include="ListNodes\DoublyListNode.cs" />

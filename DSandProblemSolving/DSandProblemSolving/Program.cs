@@ -70,6 +70,7 @@ namespace DSandProblemSolving
             //MergeSort(arr, arr.Length);
             #endregion
 
+            #region SingleLinkedList
             // singleLinkedList
             //int[] arr = { 2, 5, 7, 11, 12, 15, 20, 30, 34, 36, 30,40 };
             //int[] arr = { 6, 5, 3, 1, 8, 7, 10, 2, 4, 12 };
@@ -103,8 +104,9 @@ namespace DSandProblemSolving
             //singlelinkedList.swapNodesinLLingroupsize(4);
             //singlelinkedList.removeDuplicatessortedList();
             //singlelinkedList.traverseLinkedList();
+            #endregion
 
-
+            #region DoubleLinkedList
             //ListNodes.DoublyLinkedList doublyLinkedList = new ListNodes.DoublyLinkedList();
             //doublyLinkedList.create(arr);
 
@@ -120,7 +122,9 @@ namespace DSandProblemSolving
             //doublyLinkedList.traverseDoublyLinkedListFromStart();
             //Console.WriteLine();
             //doublyLinkedList.traverseDoublyLinkedListFromEnd();
+            #endregion
 
+            #region BST
             //Binary search tree
             //ListNodes.BinarySearchTree bst = new ListNodes.BinarySearchTree();
             //bst.createBST(arr);
@@ -159,7 +163,9 @@ namespace DSandProblemSolving
 
             //bst.LCA();
 
+            #endregion
 
+            #region DynamicPP
             //Arrays
             //int[] maxsSubarray = { 4, -3, -2, 2, 3, 1, -2, -3, 4, 2, -6, -3, -1, 3, 1, 2 };
             //maxsumSubarray(maxsSubarray);
@@ -208,6 +214,9 @@ namespace DSandProblemSolving
             //jobs[3] = new Job(6, 7, 4);
             //jobs[4] = new Job(7, 9, 2);
             //jobs[5] = new Job(5, 8, 11);
+            #endregion
+
+            #region Matrix
 
             //maximumProfits(jobs);
 
@@ -226,11 +235,17 @@ namespace DSandProblemSolving
             //GetUpperBound(0) - Will get Row count
             //GetUpperBound(1) - Will get Col count
             //Printmatrixspiralform(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
-            PrintDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+            //PrintDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
             //countNegativeValuesinMatrix(Negativematrix, Negativematrix.GetUpperBound(0), Negativematrix.GetUpperBound(1));
             //searchElementinaMatrix(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1), 25);
             //PrintAllDiagonal(matrix, matrix.GetUpperBound(0), matrix.GetUpperBound(1));
+            #endregion
 
+            #region Heap
+            int[] heapArr = { 15, 10, 20, 8, 12, 17 };
+            HeapSort.HeapSort heapSort = new HeapSort.HeapSort();
+            heapSort.Sort(heapArr);
+            #endregion
         }
 
         private static void maximumProfits(Job[] jobs)
@@ -250,7 +265,7 @@ namespace DSandProblemSolving
                         break;
                     }
                 }
-            }           
+            }
             Console.WriteLine(temp.Max());
         }
 
@@ -810,7 +825,7 @@ namespace DSandProblemSolving
             }
             while (j < right.Length)
             {
-                arr[j] = right[j];
+                arr[k] = right[j];
                 j++;
             }
         }
